@@ -16,7 +16,6 @@
   background-color: #f2f2f2;
   position: relative;
   display: flex;
-  /* выше установили ограничения для секции */
 }
 
 .logo {
@@ -52,7 +51,6 @@ font-size: 18px;
 font-weight: normal;
 }
 
-
 .link {
   color: #2f80ed;
 }
@@ -66,7 +64,6 @@ font-weight: normal;
   z-index: 1;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -75,9 +72,6 @@ font-weight: normal;
   top: 64px;
   right: 0;
 }
-
-/* и элемента с модификатором вида ключ-значение */
-
 
 .description {
   display: flex;
@@ -88,7 +82,7 @@ font-weight: normal;
   display: flex;
   width: 80%;
   justify-content: space-between;
-  margin: 100px auto 0;
+  margin: 100px auto;
 }
 
 .two-columns__brief {
@@ -120,6 +114,10 @@ font-weight: normal;
   font-weight: 600;
 }
 
+.digits {
+  margin-bottom: 100px;
+}
+
 .section-title {
   font-size: 60px;
   font-weight: 600;
@@ -136,10 +134,6 @@ font-weight: normal;
   width: 60%;
   margin: 0 auto;
   text-align: center;
-}
-
-.digits {
-  margin-top: 100px;
 }
 
 .table {
@@ -197,6 +191,7 @@ font-weight: normal;
   font-weight: normal;
   line-height: 51px;
   text-align: center;
+  
 }
 
 .feynman__link {
@@ -286,7 +281,9 @@ font-weight: normal;
 
 .footer__column_content_copyright{
   flex-basis: 711px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo__place_footer {
@@ -298,15 +295,17 @@ font-weight: normal;
   font-size: 18px;
   font-weight: normal;
   line-height: 25px;
-  position: absolute;
-  bottom: 18px;
+  padding-bottom: 18px;
+}
+
+.footer__column_content_info {
+  color: white;
 }
 
 .footer__column-heading {
   font-size: 18px;
   font-weight: 600;
   line-height: 30px;
-  color: white;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -315,26 +314,25 @@ font-weight: normal;
   font-size: 18px;
   font-weight: normal;
   line-height: 30px;
-  color: white;
   list-style: none;
   padding: 0;
+  margin-bottom: 16px;
 }
 
-.footer__social-icon {
-  color: white;
-  list-style: none;
-  padding: 0;
+.footer__column-link {
   font-size: 18px;
   font-weight: normal;
   line-height: 30px;
+  list-style: none;
 }
 
-.footer__social-icon_img {
+.footer__column_content_social {
+  color: white;
+}
+
+.footer__social-icon {
   margin-right: 10px;
+  margin-left: 0;
   width: 16px;
   height: 16px;
-}
-
-.column-link {
-  margin-bottom: 16px;
 }
