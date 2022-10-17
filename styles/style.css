@@ -109,10 +109,11 @@ z-index: 2;
 
 .two-columns__paragraph {
   margin: 0;
+  padding-bottom: 30px;
 }
 
-.two-columns__paragraph:nth-last-child(n+2) {
-  padding-bottom: 30px;
+.two-columns__paragraph:last-child {
+  padding-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -172,10 +173,11 @@ z-index: 2;
   font-weight: normal;
   line-height: 1.2;
   margin: 0;
+  padding-bottom: 20px;
 }
 
-.table__text:nth-last-child(n+2) {
- padding-bottom: 20px;
+.table__text:last-child {
+ padding-bottom: 0;
 }
 
 .feynman {
@@ -310,6 +312,7 @@ z-index: 2;
 }
 
 .footer__author {
+  margin: 0;
   color: white;
   font-size: 18px;
   font-weight: normal;
