@@ -1,0 +1,9 @@
+.cards__item {
+  margin-right: 100px;
+  width: 240px;
+  box-sizing: border-box;
+}
+
+.cards__item:nth-child(3) {
+  margin-right: 0;
+}
